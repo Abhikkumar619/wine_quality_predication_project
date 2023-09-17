@@ -28,8 +28,11 @@ list_of_file=[
 
 for filepath in list_of_file:
     filepath=Path(filepath)
+    # logging.info(f"File_path :: {filepath}")
+    
 
     file_dir, filename=os.path.split(filepath)
+    logging.info(f"file_dir :: {file_dir} and file_Name: {filename}")
 
     if file_dir !="":
         os.makedirs(file_dir, exist_ok=True)
