@@ -10,6 +10,7 @@ list_of_file=[
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",
+    f"src/{project_name}/utils/common.py",
     f"src/{project_name}/config/__init__.py",
     f"src/{project_name}/config/configuration.py",
     f"src/{project_name}/pipeline/__init__.py",
@@ -27,7 +28,7 @@ list_of_file=[
 ]
 
 for filepath in list_of_file:
-    filepath=Path(filepath)
+    filepath=Path(filepath) # convert linux file path system into windows file path.
     # logging.info(f"File_path :: {filepath}")
     
 
